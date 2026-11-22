@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#17244a"><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐐</text></svg>">
-<title>NeuroAnat & ENT — QCM des profs pour les GOAT 🐐</title>
+<title>NeuroAnat & ENT — QCM Médecine Midterm</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#17244a;--neuro:#3557a6;--ntint:#eef2fb;--ent:#a53c55;--etint:#fbeff2;--ok:#23784f;--oktint:#e6f6ee;--bad:#c0392b;--badtint:#fdecea;--line:#e3e6ee;--muted:#6c7488}
@@ -154,7 +154,7 @@ body.dark .panel,body.dark .pstat div{background:#161e33;border-color:#2c3550}bo
 <body><div class="layout">
 <aside id="side"><a href="index.html" style="display:inline-block;color:#c9d2ea;font:600 12px Inter;text-decoration:none;margin-bottom:10px;border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:3px 10px">← All modules</a><button class="mtog" onclick="document.getElementById('side').classList.toggle('open')">☰ Chapters</button>
  <div class="brand">S3 · UM6SS · 🐐</div>
- <h1>NeuroAnat &amp; ENT<br>QCM for the GOATs</h1>
+ <h1>NeuroAnat &amp; ENT<br>QCM Médecine · Midterm</h1>
  <div class="sub">Past questions from Prof. Fliyou &amp; Pr Hajjij, checked against your lectures.</div>
  <div class="cd" id="cd"></div><div class="tb"><button onclick="toggleDark()" id="dmb">🌙 Night mode</button><button onclick="hardReset(this)">↺ Reset progress</button></div><div class="tb"><button onclick="syncUI()">☁️ Account / sync</button></div><div class="gp" id="gp"></div><div class="nav" id="nav"></div>
 </aside>
@@ -338,7 +338,7 @@ function render(id){nav(id);window.scrollTo(0,0);if(id==="exam")return examView(
 function home(){const t=totals();
  const lvl=t.d===0?"Let's start 🚀":t.pct>=85?"GOAT level 🐐":t.pct>=65?"Solid 💪":"Keep going 📚";
  const next=CH.find(c=>{const s=chStats(c.id);return s.d<s.n});
- let h=`<div class="hero2"><div class="goat">🐐</div><div class="k">S3 · Prof. Fliyou &amp; Pr Hajjij</div><h2>NeuroAnat &amp; ENT<br>QCM for the GOATs</h2>
+ let h=`<div class="hero2"><div class="goat">🐐</div><div class="k">S3 · Prof. Fliyou &amp; Pr Hajjij</div><h2>NeuroAnat &amp; ENT<br>QCM Médecine · Midterm</h2>
  <p>${Q.length} real exam questions, checked one by one against the course handbook. Every answer comes with the original question and the matching lecture slide.</p>
  <div class="cta">${next?`<button class="w" onclick="go('${next.id}')">${t.d?"Continue":"Start"} — ${next.t} →</button>`:""}<button class="w" style="background:#ffd166" onclick="go('exam')">🎯 Generate an exam</button><button class="g" onclick="go('n1')">Neuroanatomy</button><button class="g" onclick="go('e1')">ENT</button></div></div>
  <div class="stats">
